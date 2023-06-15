@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-Red: hsl(356, 69%, 56%);
+
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram:linear-gradient(to right, hsl(329, 70%, 58%), hsl(37, 97%, 70%));
+    --YouTube: hsl(348, 97%, 39%);
+
+    /* =====================DARK THEME=================== */
+    --Very-Dark-Blue-BG-DM: hsl(230, 17%, 14%);
+    --Very-Dark-Blue-Top-BG-Pattern-DM: hsl(232, 19%, 15%);
+    --Dark-Desaturated-Blue-Card-BG-DM: hsl(228, 28%, 20%);
+    --Desaturated-Blue-Text-DM: hsl(228, 34%, 66%);
+    --White-Text-DM: hsl(0, 0%, 100%);
+    --Toggle-DM: linear-gradient(to right, hsl(146, 68%, 55%), hsl(210, 78%, 56%)) ;
+
+     /* =====================LIGHT THEME=================== */
+    --White-BG-LM: hsl(0, 0%, 100%);
+    --Very-Pale-Blue-Top-BG-Pattern-LM: hsl(225, 100%, 98%);
+    --Light-Grayish-Blue-Card-BG-LM: hsl(227, 47%, 96%);
+    --Dark-Grayish-Blue-Text-LM: hsl(228, 12%, 44%);
+    --Very-Dark-Blue-Text-LM: hsl(230, 17%, 14%);
+    --Toggle-LM: hsl(230, 22%, 74%);
+}
+
+/* =============================REUSABLE==================================== */
+
+
+h1, h2, h3{
+    color: var(--Very-Dark-Blue-Text-LM);
+}
+
+span{
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue-Text-LM);
+}
+
+small{
+    font-size: .7rem;
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue-Text-LM);
+}
+
+.count{
+    color: var(--Lime-Green);
+}
+
+.count.red{
+    color: var(--Bright-Red);
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(
+    to top,
+    var(--White-BG-LM) 0%,
+    var(--White-BG-LM)70%,
+    var(--Very-Pale-Blue-Top-BG-Pattern-LM) 50%,
+    var(--Very-Pale-Blue-Top-BG-Pattern-LM) 100%
+  );
+    transition: .5s;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 3% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ================================HEADER===================================== */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title{
+    transition: .5s;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.toggle-display-wrapper{
+    width: 45px;
+    border-radius: 1rem;
+    background: var(--Toggle-LM);
+    padding: 2.5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.toggle-thumb{
+    width: 15px;
+    height: 15px;
+    background: var(--White-BG-LM);
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* ================================MAIN DASHBOARD===================================== */
+
+.main-dashboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.social-box{
+    padding: 2rem 3.5rem 1rem;
+    width: 100%;
+    text-align: center;
+    background: var(--Light-Grayish-Blue-Card-BG-LM);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.facebook{
+    border-top: 4px solid var(--Facebook);
+}
+
+.twitter{
+    border-top: 4px solid var(--Twitter);
+}
+
+.instagram{
+    border-top: 4px solid #ff9a3c;
+}
+
+.youtube{
+    border-top: 4px solid var(--YouTube);
+}
+
+.social-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.followers-count{
+    font-size: 3rem;
+    transition: .5s;
+}
+
+.followers-text{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: .7rem;
+    letter-spacing: 5px;
+    color: var(--Dark-Grayish-Blue-Text-LM);
+    margin-bottom: 1rem;
+}
+
+
+/* ==========================OVERVIEW DASHBOARD================================= */
+
+.overview-title{
+    font-size: 1.3rem;
+    color: var(--Dark-Grayish-Blue-Text-LM);
+    margin-bottom: 1rem;
+    transition: .5s;
+}
+
+.overview-box-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.overview-box{
+    width: 100%;
+    padding: 1.2rem;
+    background: var(--Light-Grayish-Blue-Card-BG-LM);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.top,
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top{
+    margin-bottom: 1rem;
+}
+
+.number{
+    font-size: 1.8rem;
+    transition: .5s;
+}
+
+
+/* ===========================DARKMODE================================ */
+.overview-title.dark-mode,
+.number.dark-mode,
+.title.dark-mode,
+.followers-count.dark-mode{
+    color: var(--White-Text-DM);
+}
+
+
+.overview-box.dark-mode,
+.social-box.dark-mode,
+.toggle-thumb.dark-mode{
+    background: var(--Dark-Desaturated-Blue-Card-BG-DM);
+}
+
+.toggle-display-wrapper.dark-mode{
+    padding-left: 27px;
+    background: var(--Toggle-DM);
+}
+
+body.dark-mode{
+    background: linear-gradient(
+        to top,
+        var(--Very-Dark-Blue-BG-DM) 0%,
+        var(--Very-Dark-Blue-BG-DM)70%,
+        var(--Very-Dark-Blue-Top-BG-Pattern-DM) 50%,
+        var(--Very-Dark-Blue-Top-BG-Pattern-DM) 100%)
+}
+
+/* =============================RESPONSIVE FOR SMALLER DEVICE =======================*/
+@media (max-width: 600px){
+
+    .container{
+        width: 100%;
+        padding: 2rem;
+    }
+    .dashboard-container{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .header-right{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-dashboard{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        
+    }
+
+    .overview-box-wrapper{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+}

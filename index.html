@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <section class="header-left">
+        <h1 class="title">Social Media Dashboard</h1>
+        <span class="total-followers-text">Total Followers: 23,004</span>
+      </section>
+  
+      <section class="header-right">
+        <span class="toggle-display-text">Dark Mode</span>
+        <div class="toggle-display-wrapper">
+          <span class="toggle-thumb"></span>
+        </div>
+      </section>
+      
+    </header>
+
+    <main class="dashboard-container">
+
+      <!-- =============================MAIN DASHBOARD=================================== -->
+  
+      <section class="main-dashboard">
+        <div class="social-box facebook">
+  
+          <div class="social-header">
+            <img src="images/icon-facebook.svg" alt="" class="icon">
+            <small class="handle">@nathanf</small>
+          </div>
+  
+          <div class="followers-wrapper">
+            <h2 class="followers-count"> 1987</h2>
+            <p class="followers-text">  Followers</p>
+          </div>
+  
+          <div class="follow-tracker-wrapper">
+            <img src="images/icon-up.svg" alt="" class="tracker-icon">
+            <small class="count">12 Today</small>
+          </div>
+  
+        </div>
+  
+        <div class="social-box twitter">
+  
+          <div class="social-header">
+            <img src="images/icon-twitter.svg" alt="" class="icon">
+            <small class="handle">@nathanf</small>
+          </div>
+  
+          <div class="followers-wrapper">
+            <h2 class="followers-count"> 1044</h2>
+            <p class="followers-text">  Followers</p>
+          </div>
+  
+          <div class="follow-tracker-wrapper">
+            <img src="images/icon-up.svg" alt="" class="tracker-icon">
+            <small class="count"> 99 Today</small>
+          </div>
+  
+        </div>
+  
+        <div class="social-box instagram">
+  
+          <div class="social-header">
+            <img src="images/icon-instagram.svg" alt="" class="icon">
+            <small class="handle">@realnathanf</small>
+          </div>
+  
+          <div class="followers-wrapper">
+            <h2 class="followers-count"> 11k</h2>
+            <p class="followers-text">  Followers</p>
+          </div>
+  
+          <div class="follow-tracker-wrapper">
+            <img src="images/icon-up.svg" alt="" class="tracker-icon">
+            <small class="count">1099 Today</small>
+          </div>
+  
+        </div>
+  
+        <div class="social-box youtube">
+  
+          <div class="social-header">
+            <img src="images/icon-youtube.svg" alt="" class="icon">
+            <small class="handle"> Nathan F.</small>
+          </div>
+  
+          <div class="followers-wrapper">
+            <h2 class="followers-count">8239</h2>
+            <p class="followers-text"> Subscribers</p>
+          </div>
+  
+          <div class="follow-tracker-wrapper">
+            <img src="images/icon-down.svg" alt="" class="tracker-icon">
+            <small class="count red">144 Today</small>
+          </div>
+  
+        </div>
+      </section>
+  
+  
+      <!-- =====================================OVERVIEW DASHBOARD=========================== -->
+      <section class="overview-dashboard">
+  
+        <h2 class="overview-title">Overview - Today</h2>
+  
+  
+        <div class=" overview-box-wrapper">
+          <div class="overview-box">
+            <div class="top">
+              <span class="action">Page Views</span>
+              <img src="images/icon-facebook.svg" alt="" class="icon">
+            </div>
+    
+            <div class="bottom">
+              <h3 class="number">87</h3>
+              <div class="overview-tracker-wrapper">
+                <img src="images/icon-up.svg" alt="" class="tracker-icon">
+                <small class="count">3%</small>
+              </div>
+            </div>
+          </div>
+    
+          <div class="overview-box">
+            <div class="top">
+              <span class="action"> Likes</span>
+              <img src="images/icon-facebook.svg" alt="" class="icon">
+            </div>
+    
+            <div class="bottom">
+              <h3 class="number">52</h3>
+              <div class="overview-tracker-wrapper">
+                <img src="images/icon-down.svg" alt="" class="tracker-icon">
+                <small class="count red">2%</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview-box">
+            <div class="top">
+              <span class="action">Likes</span>
+              <img src="images/icon-instagram.svg" alt="" class="icon">
+            </div>
+    
+            <div class="bottom">
+              <h3 class="number">5462</h3>
+              <div class="overview-tracker-wrapper">
+                <img src="images/icon-up.svg" alt="" class="tracker-icon">
+                <small class="count">2257%</small>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="overview-box">
+            <div class="top">
+              <span class="action"> Profile Views</span>
+              <img src="images/icon-instagram.svg" alt="" class="icon">
+            </div>
+    
+            <div class="bottom">
+              <h3 class="number">52k</h3>
+              <div class="overview-tracker-wrapper">
+                <img src="images/icon-up.svg" alt="" class="tracker-icon">
+                <small class="count">1375%</small>
+              </div>
+            </div>
+          </div>
+  
+          <div class="overview-box">
+            <div class="top">
+              <span class="action">Retweets</span>
+              <img src="images/icon-twitter.svg" alt="" class="icon">
+            </div>
+    
+            <div class="bottom">
+              <h3 class="number">117</h3>
+              <div class="overview-tracker-wrapper">
+                <img src="images/icon-up.svg" alt="" class="tracker-icon">
+                <small class="count">303%</small>
+              </div>
+            </div>
+          </div>
+  
+          <div class="overview-box">
+            <div class="top">
+              <span class="action">Likes</span>
+              <img src="images/icon-twitter.svg" alt="" class="icon">
+            </div>
+    
+            <div class="bottom">
+              <h3 class="number">507</h3>
+              <div class="overview-tracker-wrapper">
+                <img src="images/icon-up.svg" alt="" class="tracker-icon">
+                <small class="count">553%</small>
+              </div>
+            </div>
+          </div>
+  
+          <div class="overview-box">
+            <div class="top">
+              <span class="action">Likes</span>
+              <img src="images/icon-youtube.svg" alt="" class="icon">
+            </div>
+    
+            <div class="bottom">
+              <h3 class="number">107</h3>
+              <div class="overview-tracker-wrapper">
+                <img src="images/icon-down.svg" alt="" class="tracker-icon">
+                <small class="count red">19%</small>
+              </div>
+            </div>
+          </div>
+  
+          <div class="overview-box">
+            <div class="top">
+              <span class="action">Total Views</span>
+              <img src="images/icon-youtube.svg" alt="" class="icon">
+            </div>
+    
+            <div class="bottom">
+              <h3 class="number">1407</h3>
+              <div class="overview-tracker-wrapper">
+                <img src="images/icon-down.svg" alt="" class="tracker-icon">
+                <small class="count red">12%</small>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
